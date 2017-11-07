@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temperature Change</title>
+    <script type="text/javascript">
+      var input;
+      var fahrenheit;
+      var centigrade;
+
+      input = window.prompt("Please enter the centigrade");
+
+      function change(input)
+      {
+        centigrade = parseInt(input)
+        fahrenheit = 32 + 1.8 * centigrade;
+        return fahrenheit.toFixed(2);
+      }
+
+
+      document.writeln("The Fahrenheit is " + change(input));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
